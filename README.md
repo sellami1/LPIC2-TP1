@@ -47,7 +47,7 @@ sudo tcpdump -i eth0 -n
 ```
 
 **Capture (placeholder) :**
-![Capture simple tcpdump](screenshots/simple_cap.png.png)
+![Capture simple tcpdump](screenshots/simple_cap.png)
 
 **Description de la capture :**
 Capture en temps réel affichant les paquets observés sur `eth0`. Le flag `-n` empêche la résolution DNS pour plus de rapidité et lisibilité.
@@ -72,7 +72,7 @@ ping -c 4 google.com
 ```
 
 **Capture (placeholder) :**
-![Capture ICMP pendant ping](screenshots/pcap_ping.png.png)
+![Capture ICMP pendant ping](screenshots/pcap_ping.png)
 
 **Description :**
 La capture montre les `ICMP echo request` (type 8) envoyés par la machine et les `ICMP echo reply` (type 0) reçus depuis l’adresse IP de destination (Google). On peut voir l’`id`, le `seq` et la longueur de la payload.
