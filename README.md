@@ -46,7 +46,7 @@ tcpdump -D
 sudo tcpdump -i eth0 -n
 ```
 
-**Capture (placeholder) :**
+**Capture simple de traffic :**
 ![Capture simple tcpdump](screenshots/simple_cap.png)
 
 **Description de la capture :**
@@ -71,7 +71,7 @@ Terminal 2 (ping) :
 ping -c 4 google.com
 ```
 
-**Capture (placeholder) :**
+**Capture de traffic de ping (ICMP) :**
 ![Capture ICMP pendant ping](screenshots/pcap_ping.png)
 
 **Description :**
@@ -113,7 +113,7 @@ sudo tcpdump -i eth0 port 53 -n -vv
 nslookup example.com
 ```
 
-**Capture (placeholder) :**
+**Capture DNS :**
 ![Capture DNS avec tcpdump](screenshots/dns_fil.gif)
 
 **Description :**
@@ -133,7 +133,7 @@ wireshark capture.pcap &
 
 ### Capture Wireshark — non filtrée
 
-**Screenshot (placeholder) :**
+**Wireshark sans filtre :**
 ![Wireshark non filtrée](screenshots/sans_filtre.png)
 
 **Description :**
@@ -148,35 +148,35 @@ Pour chaque filtre ci-dessous, indique la commande (display filter) utilisée da
 1. **ICMP**
 
    * **Filtre Wireshark :** `icmp`
-   * **Screenshot (placeholder) :**
+   * **Wireshark avec filtre proto. ICMP :**
      ![Wireshark filtre icmp](screenshots/icmp.png)
    * **Description :** Affiche uniquement paquets ICMP (echo request / reply).
 
 2. **TCP**
 
    * **Filtre Wireshark :** `tcp`
-   * **Screenshot (placeholder) :**
+   * **Wireshark - filtre TCP :**
      ![Wireshark filtre tcp](screenshots/tcp.png)
    * **Description :** Montre les flux TCP; utile pour analyser handshakes, flags, retransmissions.
 
 3. **UDP**
 
    * **Filtre Wireshark :** `udp`
-   * **Screenshot (placeholder) :**
+   * **Wireshark - filtre UDP :**
      ![Wireshark filtre udp](screenshots/udp.png)
    * **Description :** Filtre pour le trafic sans connexion (ex. DNS, DHCP, certains flux applicatifs).
 
 4. **DNS**
 
    * **Filtre Wireshark :** `dns`
-   * **Screenshot (placeholder) :**
+   * **Wireshark - filtre DNS :**
      ![Wireshark filtre dns](screenshots/dns.png)
    * **Description :** Affiche requêtes et réponses DNS décodées (types, classes, enregistrements).
 
 5. **HTTP**
 
    * **Filtre Wireshark :** `http`
-   * **Screenshot (placeholder) :**
+   * **Wireshark - filtre HTTP :**
      ![Wireshark filtre http](screenshots/http.png)
    * **Description :** Montre requêtes et réponses HTTP (GET, POST, en-têtes). Si le trafic est chiffré (HTTPS), il n’apparaîtra pas ici.
 
